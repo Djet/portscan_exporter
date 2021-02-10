@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 from prometheus_client import Gauge, start_http_server
 import time
 import nmap3
