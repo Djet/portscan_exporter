@@ -37,7 +37,7 @@ def scan_host(ipaddr):
 if __name__ == '__main__':
   print("Start server: port " + str(server_port) + ", update time: " + str(update_time) + ", scan list " + str(scan_list) )
   reason_ttl = Gauge('portscan_reason_ttl', 'Description of gauge', labelnames=["host","protocol","portid"])
-  open_port_total = Gauge('open_port_total', 'Open port total', labelnames=["host"])
+  open_port_total = Gauge('portscan_open_port_total', 'Open port total', labelnames=["host"])
   start_http_server(server_port)
   while True:
     for host in scan_list:
