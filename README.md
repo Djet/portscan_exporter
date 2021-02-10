@@ -19,6 +19,24 @@ server_list:
 ### Using the docker image
     docker run --rm -d -p 9115:9115 --name portscan_exporter -v $(pwd):/config djet/portscan_exporter --config /config/portscan.yml
 
+### Using the docker compose
+
+```
+version: '3'
+
+services:
+  portscan_exporter:
+    image: djet/portscan_exporter:latest
+    volumes:
+      - ./config:/config
+    command:
+      - '--config=/config/portscan_exporter.yml'
+    ports:
+      - 9115:9115
+    restart: always
+
+```
+
 ## Building the software
 
 ### Building with Docker
