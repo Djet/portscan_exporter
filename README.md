@@ -1,6 +1,6 @@
 # Portscan exporter
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/djet/portscan-exporter.svg?maxAge=604800)][hub]
+[![Docker Pulls](https://img.shields.io/docker/pulls/djet/portscan_exporter.svg?maxAge=604800)][hub]
 
 The portscan exporter scans for open ports
 
@@ -29,4 +29,4 @@ After a successful local build:
     docker build -t portscan_exporter .
 
 
-[hub]: https://hub.docker.com/r/djet/portscan-exporter/
+[hub]: https://hub.docker.com/r/djet/portscan_exporter/
