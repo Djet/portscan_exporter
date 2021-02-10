@@ -17,8 +17,7 @@ server_list:
 ```
 
 ### Using the docker image
-
-    docker run --rm -d -p 9115:9115 --name portscan_exporter -v `pwd`:/config djet/portscan-exporter:master --config.file=/config/portscan.yml
+    docker run --rm -d -p 9115:9115 --name portscan_exporter -v $(pwd):/config djet/portscan_exporter --config /config/portscan.yml
 
 ## Building the software
 
