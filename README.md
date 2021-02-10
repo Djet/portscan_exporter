@@ -9,7 +9,7 @@ The portscan exporter scans for open ports
 ### Config file
 
 ```
-server_port: 8000
+server_port: 9115
 update_time: 600
 server_list:
  - 8.8.8.8
