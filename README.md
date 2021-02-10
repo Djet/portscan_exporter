@@ -1,6 +1,6 @@
 # Portscan exporter
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/djet/portscan_exporter.svg?maxAge=604800)][hub]
+![Docker Pulls](https://img.shields.io/docker/pulls/djet/portscan_exporter?style=for-the-badge)
 
 The portscan exporter scans for open ports
 
