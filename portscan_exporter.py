@@ -6,7 +6,6 @@ import socket
 import argparse
 import yaml
 
-
 parser = argparse.ArgumentParser(description='Exporter for network port scanner.')
 parser.add_argument('--config', help='sleep time to next probe. Default: 600 sec', type=str)
 args = parser.parse_args()
@@ -25,7 +24,7 @@ scan_list = config_file["server_list"]
 
 def scan_host(ipaddr):
   nmap = nmap3.NmapScanTechniques()
-  results = nmap.nmap_syn_scan(ipaddr)
+  results = nmap.nmap_syn_scan(ipaddr,args="-p1-65000")
   ports = results[ipaddr]["ports"]
   open_ports = []
   for port_info in ports:
