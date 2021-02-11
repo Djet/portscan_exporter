@@ -36,6 +36,21 @@ services:
     restart: always
 
 ```
+## Prometheus Configuration
+
+Example config:
+
+```
+  - job_name: portscan_exporter
+
+    scrape_interval: 60s
+    scrape_timeout: 2s
+    honor_labels: true
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['portscan-exporter:9115']
+
+```
 
 ## Building the software
 
